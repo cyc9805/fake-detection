@@ -22,3 +22,4 @@
   cd run_scripts
   bash chk_accuracy.sh
   ```
+#### __개인정보 문제로 데이터는 업로드 하지 않았습니다__
