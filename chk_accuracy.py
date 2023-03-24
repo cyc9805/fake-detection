@@ -90,7 +90,7 @@ def main(args):
         orig_features = torch.tensor([])
         orig_labels = torch.tensor([])
 
-        for orig_image, orig_label in hospital_refer_dict[hospital]:
+        for orig_image, orig_label in hospital_orig_dict[hospital]:
             out_feature = pt_model(orig_image, set_classifier=False)
             orig_features = torch.concat((orig_features, out_feature), dim=0)
             orig_labels = torch.concat((orig_labels, orig_label), dim=0)
