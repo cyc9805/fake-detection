@@ -145,7 +145,7 @@ def main(args):
         pos_hit = 0.0
         pos_miss = 0.0
         for mean in sim_mean_orig:
-            if mean * 100 >= args.threshold:
+            if mean * 100 > args.threshold:
                 pos_hit += 1
             else:
                 pos_miss += 1
