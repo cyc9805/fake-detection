@@ -343,6 +343,8 @@ if __name__ == '__main__':
     batch_size['test1'].append(int(len(dataloaders['test1'][0])))
     batch_size['test2'].append(int(len(dataloaders['test2'][0])))
 
+    # visual_sample(dataloaders['train'][1])
+    
     model = ft_zi2zi_Gen()
     model = load_network_path(model, model_path)
 
