@@ -58,7 +58,7 @@ class Padtofixedsize(object):
 
 def visual_sample(samples, savefile=True):
     cnt = 0
-    for sample_image in samples:
+    for sample_image, label in samples:
         cnt += 1
         sample_image = sample_image.squeeze()
         sample_image = sample_image * 0.5 + 0.5
